@@ -1,0 +1,23 @@
+h1{
+    color:#ff0000;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+heading1{
+    color:#ff0000;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+h2{
+    color:#8142f5; 
+}
+heading2{
+    color:#8142f5;
+}
+@media screen and (max-width:768px){
+    body{
+        background-color: #000;
+        color:#FFF;
+        font-family: "Arial", "Helvetica", "sans-serif";
+    }
+}
