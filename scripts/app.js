@@ -49,5 +49,4 @@ const app = Vue.createApp({
         this.fetchWeather();
     }
 });
-
 app.mount('#app');
