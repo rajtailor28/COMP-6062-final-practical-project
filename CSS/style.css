@@ -1,44 +1,75 @@
 body {
+    position: relative;
     font-family: Arial, sans-serif;
-    background-color: #e5eaf5; /* Freeze Purple */
-    color: #8458B3; /* Purple Pain */
-    /*padding: 20px;*/
+    color: #000; 
+    margin: 0; 
+    height: 100vh; 
+}
 
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Van_Gogh_-_Starry_Night_-_Google_Art_Project.jpg/800px-Van_Gogh_-_Starry_Night_-_Google_Art_Project.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.15; /* Set the opacity of the background image */
+    z-index: -1; /* Ensure the background image stays behind the content */
 }
 
 .container {
-    /*max-width: 800px;*/
     margin: auto;
-    background-color: #FFFFFF; /* Ice Cold */
     padding: 20px;
-    /*border-radius: 8px;*/
-    /*box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);*/
+    
+}
+
+.weather-content{
+    align-items: center;
+    align-self: center;
+    align-content: center;
+    text-align: center;
+    margin: auto;
+    padding: 1;
+    
 }
 
 h1 {
     text-align: center;
-    margin-bottom: 40px;
-    color: #8458B3; /* Purple Pain */
+    margin: 30px;
+    color: #000;
 }
 
 h2 {
     margin-top: 10px;
     margin-bottom: 10px;
-
-    color: #8458B3; /* Heavy Purple */
+    color: #000;
 }
 
+input{
+    border: 2px solid #adabab;
+    border-radius: 4px;
+    padding: 4px 8px;
+}
+footer{
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 5px;
+    text-align: center;
+    color: #FFF;  
+}
 .button {
     background-color: white; 
     padding: 4px 8px;
-    margin-left: 0px;
+    margin-left: 12px;
     color: black; 
-    border: 2px solid #8458B3;
+    border: 2px solid #000;
     border-radius: 4px;
   }
   
 .button:hover {
-    background-color: #8458B3;
+    background-color: #000;
     color: white;
 }
 
@@ -47,5 +78,11 @@ h2 {
         background-color: #000;
         color:#FFF;
         font-family: "Arial", "Helvetica", "sans-serif";
+    }
+    h1{
+        color: #FFF;
+    }
+    h2{
+        color: #FFF;
     }
 }
